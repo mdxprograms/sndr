@@ -1,5 +1,5 @@
 import { dom } from "@wallerbuilt/mycelia";
-import MomentaryBtn from "./MomentaryBtn";
+import LatchBtn from "./LatchBtn";
 import { flex } from "./styleHelpers";
 
 const { div } = dom;
@@ -35,10 +35,7 @@ const itter = (start: number, stop: number, step: number) =>
 
 const seqSteps = itter(1, 16, 1);
 
-const SeqSteps = div(
-  {},
-  seqSteps.map(MomentaryBtn(onToggle))
-) as HTMLDivElement;
+const SeqSteps = div({}, seqSteps.map(LatchBtn(onToggle))) as HTMLDivElement;
 
 flex(SeqSteps, {
   direction: "row",

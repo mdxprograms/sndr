@@ -32,7 +32,7 @@ const toggleOnOff = (e: OnClick) => {
   }
 };
 
-const MomentaryBtn = (cb?: (n: number) => void) => (index: number) => {
+const LatchBtn = (cb?: (n: number) => void) => (index: number) => {
   const handleClick = (e: OnClick) => {
     toggleOnOff(e);
 
@@ -58,6 +58,4 @@ const MomentaryBtn = (cb?: (n: number) => void) => (index: number) => {
   return el;
 };
 
-// styled
-
-export default MomentaryBtn;
+export default LatchBtn;
